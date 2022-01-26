@@ -19,3 +19,17 @@ sidebars:
                     - 'Product A'
                     - 'Product B'
                 path: products
+    -
+        sidebar: tutorials
+        items:
+            -
+                label: Overview
+                title: 'Application tutorial overview'
+            -
+                label: 'Wet feet'
+                title: 'Getting your feet wet with Application'
+            -
+                label: 'Daily use'
+                title: 'Using Application on a daily basis'
+                brief: 'While not yet defined, you can easily specify its meaning'
+        path: tutorials

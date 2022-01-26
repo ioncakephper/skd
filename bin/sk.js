@@ -44,7 +44,7 @@ program
         fileEasy.saveDocument(target, content)
     })
 
-program.parse("node sk md2yaml sample".split(/\s+/))
+program.parse("node sk sample".split(/\s+/))
 
 
 

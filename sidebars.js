@@ -20,5 +20,10 @@ module.exports = {
                 "getting-started\\products\\product-b"
             ]
         }
+    ],
+    "tutorials": [
+        "tutorials\\overview",
+        "tutorials\\wet-feet",
+        "tutorials\\daily-use"
     ]
 }
