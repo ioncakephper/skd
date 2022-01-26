@@ -1,0 +1,8 @@
+sidebars:
+    - sidebar: docs
+      items:
+        - First item
+        -
+          label: Getting Started
+          items:
+            - Installation

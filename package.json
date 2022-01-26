@@ -2,6 +2,9 @@
   "name": "skd",
   "version": "1.0.0",
   "description": "Build skeleton documentation projects from an outline for Docusaurus-based doc sites.",
+  "bin": {
+    "sk": "bin/sk.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/ioncakephper/skd/issues"
   },
-  "homepage": "https://github.com/ioncakephper/skd#readme"
+  "homepage": "https://github.com/ioncakephper/skd#readme",
+  "dependencies": {
+    "commander": "^8.3.0",
+    "file-easy": "^1.0.3",
+    "hbsr": "^1.0.6",
+    "lodash": "^4.17.21",
+    "yamljs": "^0.3.0"
+  }
 }
