@@ -1,0 +1,19 @@
+{
+  "name": "skd",
+  "version": "1.0.0",
+  "description": "Build skeleton documentation projects from an outline for Docusaurus-based doc sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/skd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/skd/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/skd#readme"
+}
