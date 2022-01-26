@@ -1,7 +1,12 @@
 sidebars:
     - sidebar: docs
       items:
-        - First item
+        - label: First item
+          headings:
+              - Installation
+              - label: Checking
+                items:
+                  - Verification
         -
           label: Getting Started
           items:
