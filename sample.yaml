@@ -1,5 +1,6 @@
 sidebars:
     - sidebar: docs
+      path: docs
       items:
         - label: First item
           headings:
