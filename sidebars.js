@@ -1,12 +1,23 @@
 // Generated automatically
 module.exports = {
     "docs": [
-        "docs\\first-item",
+        "welcome",
         {
-            "label": "Getting Started",
+            "label": "Getting started",
             "type": "category",
             "items": [
-                "docs\\installation"
+                "getting-started\\introduction",
+                "getting-started\\installation",
+                "getting-started\\usage"
+            ]
+        },
+        {
+            "label": "Products",
+            "type": "category",
+            "items": [
+                "getting-started\\products\\overview",
+                "getting-started\\products\\product-a",
+                "getting-started\\products\\product-b"
             ]
         }
     ]

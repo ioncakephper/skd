@@ -7,15 +7,15 @@ sidebars:
                 title: 'Application documentation'
             -
                 label: 'Getting started'
+                path: getting-started
                 items:
                     - Introduction
                     - Installation
                     - Usage
-                path: getting-started
             -
                 label: Products
+                path: products
                 items:
                     - Overview
                     - 'Product A'
                     - 'Product B'
-                path: products
