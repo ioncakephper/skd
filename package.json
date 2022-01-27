@@ -26,5 +26,10 @@
     "lodash": "^4.17.21",
     "markdown": "^0.5.0",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "rewire": "^6.0.0"
   }
 }

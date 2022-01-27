@@ -2,9 +2,6 @@ const program = require('commander')
 const path = require('path')
 const fileEasy = require('file-easy')
 const yamljs = require('yamljs')
-
-
-
 const {buildAllSidebars, saveSidebars} = require('../lib/app')
 const { loadMarkdownSidebarDefinitions } = require('../lib/md-app')
 
@@ -44,7 +41,9 @@ program
         fileEasy.saveDocument(target, content)
     })
 
-program.parse("node sk sample".split(/\s+/))
+// program.parse("node sk sample".split(/\s+/))
+
+program.parse()
 
 
 
