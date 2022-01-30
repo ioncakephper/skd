@@ -1,3 +1,0 @@
----
-title: FintechOS Mobile Launcher
----

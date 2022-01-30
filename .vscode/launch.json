@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch ssss",
+            "program": "${workspaceFolder}\\ssss.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "type": "pwa-node",
             "request": "launch",
             "name": "Launch Program",
@@ -12,6 +21,20 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\bin\\sk.js"
+        },
+        {
+            "type": "node",
+            "name": "vscode-jest-tests",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "disableOptimisticBPs": true,
+            "program": "${workspaceFolder}\\jest",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--runInBand",
+                "--watchAll=false"
+            ]
         }
     ]
 }
