@@ -60,8 +60,15 @@ program
         config = fileEasy.setDefaultExtension(config, '.json');
         fileEasy.saveDocument(config, JSON.stringify(defaultSettings, null, 4))
     })
+
 program.parse()
 
+/**
+ *
+ *
+ * @param {*} options
+ * @return {*} 
+ */
 function loadSettings(options) {
     let configFilename = fileEasy.setDefaultExtension(options.config, '.json');
     configFilename = path.resolve(configFilename);
@@ -71,5 +78,4 @@ function loadSettings(options) {
         ...require(configFilename)
         }
         : defaultSettings;
-    
 }
