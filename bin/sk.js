@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
-const program = require('commander')
-const path = require('path')
-const fileEasy = require('file-easy')
-const yamljs = require('yamljs')
-const fs = require('fs')
-
-const {buildAllSidebars, saveSidebars} = require('../lib/app')
-const { loadMarkdownSidebarDefinitions } = require('../lib/md-app')
+const program                             = require('commander')
+const fileEasy                            = require('file-easy')
+const fs                                  = require('fs')
+const path                                = require('path')
+const yamljs                              = require('yamljs')
+const {buildAllSidebars, saveSidebars}    = require('../lib/app')
+const { loadMarkdownSidebarDefinitions }  = require('../lib/md-app')
 
 let defaultSettings = {
     'outlineExtension': '.md'
@@ -22,7 +21,7 @@ program
 
 program
     .command('build', {isDefault: true})
-    .description(require("../package.json").description)
+    .description(info.description)
     .argument('<outline>', 'filename (path allowed) of documentation outline')
 
     .option('--config <config>', 'configuration filename', fileEasy.setDefaultExtension(program.name(), '.json'))
@@ -30,6 +29,7 @@ program
     .option('-d, --docs <path>', 'path to documentation files root-folder', 'docs')
     .option('-s, --sidebars <filename>', 'path and filename for Docusaurus sidebars file', 'sidebars.js')
     .option('--outlineExtension <ext>', 'outline file default extension', defaultSettings.outlineExtension || '.yaml')
+    .option('--docsExtension <ext>', 'markdown doc files default extension', '.md')
     
     .action((outline, options) => {
 
