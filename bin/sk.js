@@ -13,10 +13,12 @@ let defaultSettings = {
     'outlineExtension': '.md'
 }
 
+let info = require('../package.json');
+
 program
     .name('sk')
-    .description(require("../package.json").description)
-    .version(require("../package.json").version)
+    .description(info.description)
+    .version(info.version)
 
 program
     .command('build', {isDefault: true})
@@ -37,7 +39,7 @@ program
     })
 
 program
-    .command('md2yaml')
+    .command('toyaml')
     .description('convert Markdown outline file into Yaml outline')
     .argument('<source>', 'Markdown outline file to convert into YAML')
     .argument('[target]', 'YAML outline filename of created file')
@@ -64,10 +66,9 @@ program
 program.parse()
 
 /**
- *
- *
- * @param {*} options
- * @return {*} 
+ * Loads the settings from the config file.
+ * @param options - The options object.
+ * @returns The settings object.
  */
 function loadSettings(options) {
     let configFilename = fileEasy.setDefaultExtension(options.config, '.json');
