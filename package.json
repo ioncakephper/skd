@@ -1,6 +1,6 @@
 {
   "name": "skd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Build skeleton documentation projects from an outline for Docusaurus-based doc sites.",
   "bin": {
     "sk": "bin/sk.js"
