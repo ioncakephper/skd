@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ioncakephper/skd#readme",
   "dependencies": {
+    "@types/yamljs": "^0.2.31",
     "beautify": "^0.0.8",
     "commander": "^8.3.0",
     "file-easy": "^1.0.3",
