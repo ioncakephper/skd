@@ -9,7 +9,8 @@ const {buildAllSidebars, saveSidebars}    = require('../lib/app')
 const { loadMarkdownSidebarDefinitions }  = require('../lib/md-app')
 
 let defaultSettings = {
-    'outlineExtension': '.md'
+    'outlineExtension': '.md',
+    'docsExtension': '.md',
 }
 
 let info = require('../package.json');
@@ -21,7 +22,7 @@ program
 
 program
     .command('build', {isDefault: true})
-    .description(info.description)
+    .description(`(default) ${info.description}`)
     .argument('<outline>', 'filename (path allowed) of documentation outline')
 
     .option('--config <config>', 'configuration filename', fileEasy.setDefaultExtension(program.name(), '.json'))
@@ -33,7 +34,7 @@ program
     
     .action((outline, options) => {
 
-        let settings = loadSettings(options)
+        options = loadSettings(options)
         let sidebars = buildAllSidebars(outline, options)
         saveSidebars(sidebars, options) 
     })
